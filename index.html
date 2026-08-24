@@ -1,1 +1,221 @@
-adding an index file
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Wilbard Magaso — Full-Stack Web Developer and AI Enthusiast." />
+  <title>Wilbard Magaso | Full-Stack Web Developer & AI Enthusiast</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <style>
+    :root { --accent:#8b5cf6; --accent2:#06b6d4; }
+    * { scroll-behavior:smooth; }
+    body { font-family:Inter,sans-serif; transition:.3s; }
+    h1,h2,h3,.brand { font-family:"Space Grotesk",sans-serif; }
+    .gradient-text { background:linear-gradient(90deg,var(--accent),var(--accent2)); -webkit-background-clip:text; color:transparent; }
+    .glow { box-shadow:0 0 70px rgba(139,92,246,.16); }
+    .grid-bg { background-image:linear-gradient(rgba(139,92,246,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(139,92,246,.08) 1px,transparent 1px); background-size:40px 40px; }
+    .glass { backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); }
+    .reveal { opacity:0; transform:translateY(20px); transition:.7s ease; }
+    .reveal.show { opacity:1; transform:none; }
+    .cursor { display:inline-block; width:2px; height:1em; background:var(--accent); animation:blink 1s infinite; vertical-align:-.12em; }
+    @keyframes blink { 50%{opacity:0} }
+    .chat-scroll::-webkit-scrollbar { width:5px; }
+    .chat-scroll::-webkit-scrollbar-thumb { background:#64748b; border-radius:10px; }
+    .light body {}
+  </style>
+</head>
+<body class="bg-slate-950 text-white" id="body">
+  <header class="fixed top-0 left-0 right-0 z-50">
+    <nav class="max-w-6xl mx-auto px-5 py-4 mt-3 rounded-2xl border border-white/10 bg-slate-950/70 glass flex items-center justify-between">
+      <a href="#home" class="brand text-xl font-bold">WM<span class="gradient-text">.</span></a>
+      <div class="hidden md:flex gap-6 text-sm text-slate-300">
+        <a href="#about" class="hover:text-white">About</a><a href="#journey" class="hover:text-white">Journey</a>
+        <a href="#skills" class="hover:text-white">Skills</a><a href="#projects" class="hover:text-white">Projects</a><a href="#contact" class="hover:text-white">Contact</a>
+      </div>
+      <button id="themeBtn" class="w-10 h-10 rounded-xl border border-white/10 hover:bg-white/10" title="Toggle theme">☼</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="min-h-screen grid-bg flex items-center pt-24">
+      <div class="max-w-6xl mx-auto px-5 py-20 grid lg:grid-cols-[1.2fr_.8fr] gap-14 items-center">
+        <div class="reveal">
+          <p class="text-cyan-400 font-semibold mb-4">HELLO, I'M</p>
+          <h1 class="text-5xl md:text-7xl font-extrabold leading-tight">Wilbard <span class="gradient-text">Magaso</span></h1>
+          <p class="mt-6 text-xl md:text-2xl text-slate-300 max-w-2xl">
+            <span id="typed"></span><span class="cursor"></span>
+          </p>
+          <p class="mt-6 text-slate-400 max-w-xl leading-7">I build practical web applications, backend systems and AI-powered digital solutions.</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#projects" class="px-6 py-3 rounded-xl bg-white text-slate-950 font-bold hover:scale-[1.02] transition">Explore My Work →</a>
+            <a href="mailto:wilbardmagaso777@gmail.com" class="px-6 py-3 rounded-xl border border-white/15 hover:bg-white/10 transition">Contact Me</a>
+          </div>
+          <div class="mt-8 flex gap-4 text-2xl">
+            <a title="GitHub" href="https://github.com/willy7890" target="_blank" class="hover:text-cyan-400">◉</a>
+            <a title="LinkedIn" href="https://www.linkedin.com/in/wilbard-magaso-a57213429?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="hover:text-cyan-400">in</a>
+            <a title="Upwork" href="https://www.upwork.com/freelancers/~01c5f1a496079b7530?mp_source=share" target="_blank" class="hover:text-cyan-400">↗</a>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="glow rounded-[2rem] border border-white/10 bg-white/[.04] p-7">
+            <div class="flex items-center gap-3 mb-6">
+              <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-violet-500 to-cyan-400 grid place-items-center font-bold text-xl">WM</div>
+              <div><p class="font-bold">Wilbard Magaso</p><p class="text-sm text-slate-400">Developer • Builder • Learner</p></div>
+            </div>
+            <div class="rounded-2xl bg-slate-900/80 border border-white/10 p-5 font-mono text-sm">
+              <p class="text-slate-500">// current focus</p>
+              <p class="text-violet-300">const wilbard = {</p>
+              <p class="pl-4 text-cyan-300">role: "Full-Stack Developer",</p>
+              <p class="pl-4 text-cyan-300">focus: ["AI", "Web", "APIs"],</p>
+              <p class="pl-4 text-cyan-300">tools: ["Python", "FastAPI", "React"],</p>
+              <p class="pl-4 text-cyan-300">mindset: "Build & Learn"</p>
+              <p class="text-violet-300">}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-24">
+      <div class="max-w-6xl mx-auto px-5 reveal">
+        <p class="text-cyan-400 font-semibold">01 — ABOUT ME</p>
+        <h2 class="text-4xl md:text-5xl font-bold mt-3">Who is <span class="gradient-text">Wilbard?</span></h2>
+        <div class="mt-8 grid md:grid-cols-2 gap-8">
+          <p class="text-slate-300 leading-8 text-lg">Hi, my name is Wilbard Magaso. I am a <b>Full-Stack Web Developer and AI Enthusiast</b> focused on turning ideas into useful digital products. I enjoy working across frontend interfaces, backend APIs and AI-powered experiences.</p>
+          <p class="text-slate-400 leading-8">This portfolio is designed to let you understand what I build, the technologies I work with and the projects I am growing. If you have a project that needs to be built, you can reach me directly.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="journey" class="py-24 bg-white/[.025]">
+      <div class="max-w-6xl mx-auto px-5 reveal">
+        <p class="text-cyan-400 font-semibold">02 — MY JOURNEY</p>
+        <h2 class="text-4xl md:text-5xl font-bold mt-3">Learning. <span class="gradient-text">Building.</span> Growing.</h2>
+        <div class="mt-12 grid md:grid-cols-4 gap-4">
+          <div class="p-6 rounded-2xl border border-white/10 bg-white/[.03]"><b>01</b><h3 class="text-xl font-bold mt-3">Learn</h3><p class="text-slate-400 mt-2">Computer engineering, programming and software fundamentals.</p></div>
+          <div class="p-6 rounded-2xl border border-white/10 bg-white/[.03]"><b>02</b><h3 class="text-xl font-bold mt-3">Build</h3><p class="text-slate-400 mt-2">Turn ideas into real applications and APIs.</p></div>
+          <div class="p-6 rounded-2xl border border-white/10 bg-white/[.03]"><b>03</b><h3 class="text-xl font-bold mt-3">Explore AI</h3><p class="text-slate-400 mt-2">Experiment with AI, automation and agentic experiences.</p></div>
+          <div class="p-6 rounded-2xl border border-white/10 bg-white/[.03]"><b>04</b><h3 class="text-xl font-bold mt-3">Grow</h3><p class="text-slate-400 mt-2">Keep improving through projects, collaboration and practice.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="py-24">
+      <div class="max-w-6xl mx-auto px-5 reveal">
+        <p class="text-cyan-400 font-semibold">03 — SKILLS</p>
+        <h2 class="text-4xl md:text-5xl font-bold mt-3">Tools I <span class="gradient-text">work with.</span></h2>
+        <div class="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+          <div class="skill"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+          <div class="skill"><i class="devicon-fastapi-plain"></i><span>FastAPI</span></div>
+          <div class="skill"><i class="devicon-react-original colored"></i><span>React</span></div>
+          <div class="skill"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+          <div class="skill"><i class="devicon-html5-plain colored"></i><span>HTML</span></div>
+          <div class="skill"><i class="devicon-css3-plain colored"></i><span>CSS</span></div>
+          <div class="skill"><i class="devicon-tailwindcss-original colored"></i><span>Tailwind CSS</span></div>
+          <div class="skill"><i class="devicon-vscode-plain colored"></i><span>VS Code</span></div>
+          <div class="skill"><i class="devicon-figma-plain colored"></i><span>Figma</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="py-24 bg-white/[.025]">
+      <div class="max-w-6xl mx-auto px-5 reveal">
+        <p class="text-cyan-400 font-semibold">04 — PROJECTS</p>
+        <h2 class="text-4xl md:text-5xl font-bold mt-3">Things I've <span class="gradient-text">built.</span></h2>
+        <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div class="project"><div class="project-icon">AI</div><h3>Mteja AI</h3><p>AI-powered customer engagement and CRM concept connecting conversations and business workflows.</p></div>
+          <div class="project"><div class="project-icon">PF</div><h3>PataFundi</h3><p>A digital ecosystem connecting customers with skilled technicians and service providers.</p></div>
+          <div class="project"><div class="project-icon">DT</div><h3>Dream Together</h3><p>A secure web experience designed for couples to plan and share goals together.</p></div>
+          <div class="project"><div class="project-icon">MIS</div><h3>Management Information System</h3><p>A system concept for organizing institutional information and workflows.</p></div>
+          <div class="project"><div class="project-icon">ALS</div><h3>Online Adaptive Learning System</h3><p>An adaptive learning concept focused on personalized learning experiences.</p></div>
+          <div class="project"><div class="project-icon">SO</div><h3>SchoolOS</h3><p>A school management ecosystem for administration, learning, communication and data.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-24">
+      <div class="max-w-5xl mx-auto px-5 text-center reveal">
+        <p class="text-cyan-400 font-semibold">05 — CONTACT</p>
+        <h2 class="text-4xl md:text-6xl font-bold mt-3">Have a project? <span class="gradient-text">Let's build it.</span></h2>
+        <p class="text-slate-400 mt-5">Find me directly through any of these platforms.</p>
+        <div class="mt-10 flex flex-wrap justify-center gap-3">
+          <a class="contact" href="mailto:wilbardmagaso777@gmail.com">✉ Email</a>
+          <a class="contact" href="https://github.com/willy7890" target="_blank">GitHub</a>
+          <a class="contact" href="https://www.linkedin.com/in/wilbard-magaso-a57213429?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">LinkedIn</a>
+          <a class="contact" href="https://www.upwork.com/freelancers/~01c5f1a496079b7530?mp_source=share" target="_blank">Upwork</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button id="agentBtn" class="fixed bottom-5 right-5 z-50 w-14 h-14 rounded-full bg-gradient-to-br from-violet-500 to-cyan-400 text-white font-bold shadow-2xl">AI</button>
+
+  <div id="chat" class="hidden fixed bottom-24 right-5 z-50 w-[min(370px,calc(100vw-40px))] rounded-3xl border border-white/10 bg-slate-950/95 glass shadow-2xl overflow-hidden">
+    <div class="p-4 border-b border-white/10 flex justify-between"><div><b>Wilbard AI Guide</b><p class="text-xs text-slate-400">Ask about Wilbard</p></div><button id="closeChat">×</button></div>
+    <div id="messages" class="chat-scroll h-80 overflow-y-auto p-4 space-y-3"><div class="bg-white/5 rounded-2xl p-3 text-sm">Hi 👋 I can help you understand who Wilbard is, what he builds, his skills and how to contact him.</div></div>
+    <div class="p-3 border-t border-white/10 flex gap-2"><input id="chatInput" class="flex-1 bg-white/5 rounded-xl px-3 py-2 outline-none" placeholder="e.g. Who is Wilbard?"><button id="send" class="px-4 rounded-xl bg-violet-500">→</button></div>
+  </div>
+
+  <style>
+    .skill,.project,.contact { border:1px solid rgba(255,255,255,.1); background:rgba(255,255,255,.03); border-radius:1rem; transition:.25s; }
+    .skill { min-height:115px; display:grid; place-items:center; align-content:center; gap:10px; padding:15px; }
+    .skill i { font-size:2.2rem; }
+    .skill span { color:#cbd5e1; font-size:.9rem; }
+    .skill:hover,.project:hover,.contact:hover { transform:translateY(-4px); border-color:rgba(139,92,246,.5); }
+    .project { padding:24px; min-height:210px; }
+    .project-icon { width:48px;height:48px;border-radius:15px;background:linear-gradient(135deg,#8b5cf6,#06b6d4);display:grid;place-items:center;font-weight:800;margin-bottom:18px; }
+    .project h3 { font-size:1.25rem;font-weight:700; }
+    .project p { color:#94a3b8;margin-top:9px;line-height:1.6;font-size:.92rem; }
+    .contact { display:inline-flex;padding:12px 18px;color:#e2e8f0; }
+  </style>
+
+  <script>
+    const typedText = "Full-Stack Web Developer & AI Enthusiast";
+    let i=0;
+    function type(){ if(i<=typedText.length){document.getElementById("typed").textContent=typedText.slice(0,i++);setTimeout(type,55);} }
+    type();
+
+    const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add("show")}),{threshold:.12});
+    document.querySelectorAll(".reveal").forEach(e=>observer.observe(e));
+
+    const themeBtn=document.getElementById("themeBtn");
+    let light=false;
+    themeBtn.onclick=()=>{
+      light=!light;
+      document.body.classList.toggle("bg-slate-950",!light);
+      document.body.classList.toggle("text-white",!light);
+      document.body.classList.toggle("bg-slate-50",light);
+      document.body.classList.toggle("text-slate-900",light);
+      themeBtn.textContent=light?"☾":"☼";
+    };
+
+    const chat=document.getElementById("chat");
+    document.getElementById("agentBtn").onclick=()=>chat.classList.toggle("hidden");
+    document.getElementById("closeChat").onclick=()=>chat.classList.add("hidden");
+
+    const answers=[
+      [/who|about|nani/i,"Wilbard Magaso is a Full-Stack Web Developer and AI Enthusiast focused on building practical web applications, backend systems and AI-powered digital solutions."],
+      [/skill|know|technology|tech/i,"Wilbard works with Python, FastAPI, React, JavaScript, HTML, CSS and Tailwind CSS. He also uses VS Code and Figma."],
+      [/project|build|built/i,"His featured projects include Mteja AI, PataFundi, Dream Together, Management Information System, Online Adaptive Learning System and SchoolOS."],
+      [/contact|hire|work|reach|email/i,"You can contact Wilbard at wilbardmagaso777@gmail.com, or find him on GitHub (willy7890), LinkedIn and Upwork."],
+      [/github/i,"Wilbard's GitHub username is willy7890."],
+      [/linkedin/i,"Wilbard's LinkedIn profile is available from the Contact section of this portfolio."],
+      [/upwork/i,"Wilbard is available on Upwork through the profile linked in the Contact section."]
+    ];
+    function respond(q){const hit=answers.find(x=>x[0].test(q));return hit?hit[1]:"I can explain Wilbard's background, skills, projects or how to contact him. Try asking: “Who is Wilbard?”, “What skills does he have?” or “How can I hire him?”";}
+    function send(){
+      const input=document.getElementById("chatInput"), q=input.value.trim(); if(!q)return;
+      const box=document.getElementById("messages");
+      box.innerHTML+=`<div class="text-right"><span class="inline-block bg-violet-500/20 rounded-2xl p-3 text-sm">${q.replace(/[<>]/g,"")}</span></div>`;
+      setTimeout(()=>{box.innerHTML+=`<div class="bg-white/5 rounded-2xl p-3 text-sm">${respond(q)}</div>`;box.scrollTop=box.scrollHeight;},250);
+      input.value="";
+    }
+    document.getElementById("send").onclick=send;
+    document.getElementById("chatInput").addEventListener("keydown",e=>{if(e.key==="Enter")send();});
+  </script>
+</body>
+</html>
