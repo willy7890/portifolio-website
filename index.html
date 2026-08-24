@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Wilbard Magaso — Full-Stack Web Developer and AI Enthusiast." />
-  <title>Wilbard Magaso | Full-Stack Web Developer & AI Enthusiast</title>
+  <meta name="description" content="Wilbard Magaso — Full-Stack Web Developer & AI Solutions Engineer." />
+  <title>Wilbard Magaso | Full-Stack Web Developer & AI Engineer</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <style>
     :root { --accent:#8b5cf6; --accent2:#06b6d4; }
     * { scroll-behavior:smooth; }
@@ -25,7 +26,8 @@
     @keyframes blink { 50%{opacity:0} }
     .chat-scroll::-webkit-scrollbar { width:5px; }
     .chat-scroll::-webkit-scrollbar-thumb { background:#64748b; border-radius:10px; }
-    .light body {}
+    .agent-pulse { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .7; } }
   </style>
 </head>
 <body class="bg-slate-950 text-white" id="body">
@@ -41,140 +43,242 @@
   </header>
 
   <main>
+    <!-- HERO SECTION -->
     <section id="home" class="min-h-screen grid-bg flex items-center pt-24">
       <div class="max-w-6xl mx-auto px-5 py-20 grid lg:grid-cols-[1.2fr_.8fr] gap-14 items-center">
         <div class="reveal">
-          <p class="text-cyan-400 font-semibold mb-4">HELLO, I'M</p>
+          <p class="text-cyan-400 font-semibold mb-4 tracking-wider">FULL-STACK & AI ARCHITECT</p>
           <h1 class="text-5xl md:text-7xl font-extrabold leading-tight">Wilbard <span class="gradient-text">Magaso</span></h1>
           <p class="mt-6 text-xl md:text-2xl text-slate-300 max-w-2xl">
             <span id="typed"></span><span class="cursor"></span>
           </p>
-          <p class="mt-6 text-slate-400 max-w-xl leading-7">I build practical web applications, backend systems and AI-powered digital solutions.</p>
+          <p class="mt-4 text-slate-400 max-w-xl leading-relaxed">Building enterprise web applications, high-throughput REST APIs, and production-grade AI integrations designed to scale.</p>
+          
           <div class="mt-8 flex flex-wrap gap-3">
-            <a href="#projects" class="px-6 py-3 rounded-xl bg-white text-slate-950 font-bold hover:scale-[1.02] transition">Explore My Work →</a>
-            <a href="mailto:wilbardmagaso777@gmail.com" class="px-6 py-3 rounded-xl border border-white/15 hover:bg-white/10 transition">Contact Me</a>
+            <a href="#projects" class="px-6 py-3 rounded-xl bg-white text-slate-950 font-bold hover:scale-[1.02] transition">Explore Projects →</a>
+            <a href="mailto:wilbardmagaso777@gmail.com" class="px-6 py-3 rounded-xl border border-white/15 hover:bg-white/10 transition">Hire Me</a>
           </div>
-          <div class="mt-8 flex gap-4 text-2xl">
-            <a title="GitHub" href="https://github.com/willy7890" target="_blank" class="hover:text-cyan-400">◉</a>
-            <a title="LinkedIn" href="https://www.linkedin.com/in/wilbard-magaso-a57213429?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="hover:text-cyan-400">in</a>
-            <a title="Upwork" href="https://www.upwork.com/freelancers/~01c5f1a496079b7530?mp_source=share" target="_blank" class="hover:text-cyan-400">↗</a>
+
+          <!-- SOCIAL ICONS -->
+          <div class="mt-8 flex gap-5 text-2xl">
+            <a title="GitHub" href="https://github.com/willy7890" target="_blank" class="hover:text-cyan-400 transition"><i class="devicon-github-original"></i></a>
+            <a title="LinkedIn" href="https://www.linkedin.com/in/wilbard-magaso-a57213429" target="_blank" class="hover:text-cyan-400 transition"><i class="devicon-linkedin-plain"></i></a>
+            <a title="Upwork" href="https://www.upwork.com/freelancers/~01c5f1a496079b7530" target="_blank" class="hover:text-cyan-400 transition"><i class="fa-brands fa-upwork"></i></a>
+            <a title="Email" href="mailto:wilbardmagaso777@gmail.com" class="hover:text-cyan-400 transition"><i class="fa-solid fa-envelope"></i></a>
           </div>
         </div>
+
         <div class="reveal">
-          <div class="glow rounded-[2rem] border border-white/10 bg-white/[.04] p-7">
-            <div class="flex items-center gap-3 mb-6">
-              <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-violet-500 to-cyan-400 grid place-items-center font-bold text-xl">WM</div>
-              <div><p class="font-bold">Wilbard Magaso</p><p class="text-sm text-slate-400">Developer • Builder • Learner</p></div>
+          <div class="glow rounded-[2rem] border border-white/10 bg-white/[.04] p-5">
+            <div class="relative overflow-hidden rounded-2xl border border-white/10 mb-5 h-[360px] md:h-[400px] bg-slate-900 flex items-center justify-center">
+              <!-- LINK YA PICHA YAKO LOCAL -->
+              <img src="https://imgur.com/Hl6mhfU" alt="Wilbard Magaso" class="w-full h-full object-cover object-top shadow-2xl">
             </div>
-            <div class="rounded-2xl bg-slate-900/80 border border-white/10 p-5 font-mono text-sm">
-              <p class="text-slate-500">// current focus</p>
-              <p class="text-violet-300">const wilbard = {</p>
-              <p class="pl-4 text-cyan-300">role: "Full-Stack Developer",</p>
-              <p class="pl-4 text-cyan-300">focus: ["AI", "Web", "APIs"],</p>
-              <p class="pl-4 text-cyan-300">tools: ["Python", "FastAPI", "React"],</p>
-              <p class="pl-4 text-cyan-300">mindset: "Build & Learn"</p>
-              <p class="text-violet-300">}</p>
+            <div class="rounded-xl bg-slate-900/90 border border-white/10 p-4 font-mono text-xs text-cyan-300">
+              <p><span class="text-violet-400">const</span> engineer = {</p>
+              <p class="pl-4">name: <span class="text-amber-300">"Wilbard Magaso"</span>,</p>
+              <p class="pl-4">stack: [<span class="text-amber-300">"FastAPI"</span>, <span class="text-amber-300">"React"</span>, <span class="text-amber-300">"AI Agents"</span>],</p>
+              <p class="pl-4">status: <span class="text-emerald-400">"Open for Projects"</span></p>
+              <p>};</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="py-24">
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20">
       <div class="max-w-6xl mx-auto px-5 reveal">
-        <p class="text-cyan-400 font-semibold">01 — ABOUT ME</p>
-        <h2 class="text-4xl md:text-5xl font-bold mt-3">Who is <span class="gradient-text">Wilbard?</span></h2>
-        <div class="mt-8 grid md:grid-cols-2 gap-8">
-          <p class="text-slate-300 leading-8 text-lg">Hi, my name is Wilbard Magaso. I am a <b>Full-Stack Web Developer and AI Enthusiast</b> focused on turning ideas into useful digital products. I enjoy working across frontend interfaces, backend APIs and AI-powered experiences.</p>
-          <p class="text-slate-400 leading-8">This portfolio is designed to let you understand what I build, the technologies I work with and the projects I am growing. If you have a project that needs to be built, you can reach me directly.</p>
+        <p class="text-cyan-400 font-semibold tracking-wider">01 — OVERVIEW</p>
+        <h2 class="text-4xl md:text-5xl font-bold mt-2">Engineering Modern <span class="gradient-text">Digital Products</span></h2>
+        <div class="mt-8 grid md:grid-cols-2 gap-8 items-center">
+          <p class="text-slate-300 leading-relaxed text-lg">
+            I specialize in full-stack architecture, building high-performance web systems and integrating intelligent AI agent workflows into production software.
+          </p>
+          <p class="text-slate-400 leading-relaxed">
+            My core focus spans scalable Python APIs (FastAPI/Node.js), reactive modern UIs, complex database modeling, and automated backend infrastructure designed for reliability and speed.
+          </p>
         </div>
       </div>
     </section>
 
-    <section id="journey" class="py-24 bg-white/[.025]">
+    <!-- JOURNEY SECTION -->
+    <section id="journey" class="py-20 bg-white/[.025]">
       <div class="max-w-6xl mx-auto px-5 reveal">
-        <p class="text-cyan-400 font-semibold">02 — MY JOURNEY</p>
-        <h2 class="text-4xl md:text-5xl font-bold mt-3">Learning. <span class="gradient-text">Building.</span> Growing.</h2>
+        <p class="text-cyan-400 font-semibold tracking-wider">02 — PROCESS</p>
+        <h2 class="text-4xl md:text-5xl font-bold mt-2">Execution <span class="gradient-text">Framework</span></h2>
         <div class="mt-12 grid md:grid-cols-4 gap-4">
-          <div class="p-6 rounded-2xl border border-white/10 bg-white/[.03]"><b>01</b><h3 class="text-xl font-bold mt-3">Learn</h3><p class="text-slate-400 mt-2">Computer engineering, programming and software fundamentals.</p></div>
-          <div class="p-6 rounded-2xl border border-white/10 bg-white/[.03]"><b>02</b><h3 class="text-xl font-bold mt-3">Build</h3><p class="text-slate-400 mt-2">Turn ideas into real applications and APIs.</p></div>
-          <div class="p-6 rounded-2xl border border-white/10 bg-white/[.03]"><b>03</b><h3 class="text-xl font-bold mt-3">Explore AI</h3><p class="text-slate-400 mt-2">Experiment with AI, automation and agentic experiences.</p></div>
-          <div class="p-6 rounded-2xl border border-white/10 bg-white/[.03]"><b>04</b><h3 class="text-xl font-bold mt-3">Grow</h3><p class="text-slate-400 mt-2">Keep improving through projects, collaboration and practice.</p></div>
+          <div class="p-6 rounded-2xl border border-white/10 bg-white/[.03]"><b class="text-cyan-400 text-xl">01</b><h3 class="text-xl font-bold mt-2">System Design</h3><p class="text-slate-400 text-sm mt-2">Database schemas, architectural planning, and REST/GraphQL specs.</p></div>
+          <div class="p-6 rounded-2xl border border-white/10 bg-white/[.03]"><b class="text-cyan-400 text-xl">02</b><h3 class="text-xl font-bold mt-2">Full-Stack Build</h3><p class="text-slate-400 text-sm mt-2">FastAPI backends combined with modern React/Next.js frontends.</p></div>
+          <div class="p-6 rounded-2xl border border-white/10 bg-white/[.03]"><b class="text-cyan-400 text-xl">03</b><h3 class="text-xl font-bold mt-2">AI Integration</h3><p class="text-slate-400 text-sm mt-2">Injecting LLMs, automation flows, and intelligent agent features.</p></div>
+          <div class="p-6 rounded-2xl border border-white/10 bg-white/[.03]"><b class="text-cyan-400 text-xl">04</b><h3 class="text-xl font-bold mt-2">Deployment</h3><p class="text-slate-400 text-sm mt-2">Containerized deployment, cloud infrastructure, and API security.</p></div>
         </div>
       </div>
     </section>
 
-    <section id="skills" class="py-24">
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="py-20">
       <div class="max-w-6xl mx-auto px-5 reveal">
-        <p class="text-cyan-400 font-semibold">03 — SKILLS</p>
-        <h2 class="text-4xl md:text-5xl font-bold mt-3">Tools I <span class="gradient-text">work with.</span></h2>
+        <p class="text-cyan-400 font-semibold tracking-wider">03 — STACK</p>
+        <h2 class="text-4xl md:text-5xl font-bold mt-2">Core <span class="gradient-text">Technologies</span></h2>
         <div class="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
           <div class="skill"><i class="devicon-python-plain colored"></i><span>Python</span></div>
-          <div class="skill"><i class="devicon-fastapi-plain"></i><span>FastAPI</span></div>
-          <div class="skill"><i class="devicon-react-original colored"></i><span>React</span></div>
+          <div class="skill"><i class="devicon-fastapi-plain colored"></i><span>FastAPI</span></div>
+          <div class="skill"><i class="devicon-react-original colored"></i><span>React / Next.js</span></div>
           <div class="skill"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
-          <div class="skill"><i class="devicon-html5-plain colored"></i><span>HTML</span></div>
-          <div class="skill"><i class="devicon-css3-plain colored"></i><span>CSS</span></div>
+          <div class="skill"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
+          <div class="skill"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
           <div class="skill"><i class="devicon-tailwindcss-original colored"></i><span>Tailwind CSS</span></div>
+          <div class="skill"><i class="devicon-git-plain colored"></i><span>Git & GitHub</span></div>
           <div class="skill"><i class="devicon-vscode-plain colored"></i><span>VS Code</span></div>
           <div class="skill"><i class="devicon-figma-plain colored"></i><span>Figma</span></div>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="py-24 bg-white/[.025]">
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="py-20 bg-white/[.025]">
       <div class="max-w-6xl mx-auto px-5 reveal">
-        <p class="text-cyan-400 font-semibold">04 — PROJECTS</p>
-        <h2 class="text-4xl md:text-5xl font-bold mt-3">Things I've <span class="gradient-text">built.</span></h2>
-        <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-          <div class="project"><div class="project-icon">AI</div><h3>Mteja AI</h3><p>AI-powered customer engagement and CRM concept connecting conversations and business workflows.</p></div>
-          <div class="project"><div class="project-icon">PF</div><h3>PataFundi</h3><p>A digital ecosystem connecting customers with skilled technicians and service providers.</p></div>
-          <div class="project"><div class="project-icon">DT</div><h3>Dream Together</h3><p>A secure web experience designed for couples to plan and share goals together.</p></div>
-          <div class="project"><div class="project-icon">MIS</div><h3>Management Information System</h3><p>A system concept for organizing institutional information and workflows.</p></div>
-          <div class="project"><div class="project-icon">ALS</div><h3>Online Adaptive Learning System</h3><p>An adaptive learning concept focused on personalized learning experiences.</p></div>
-          <div class="project"><div class="project-icon">SO</div><h3>SchoolOS</h3><p>A school management ecosystem for administration, learning, communication and data.</p></div>
+        <p class="text-cyan-400 font-semibold tracking-wider">04 — PORTFOLIO</p>
+        <h2 class="text-4xl md:text-5xl font-bold mt-2">Featured <span class="gradient-text">Projects</span></h2>
+        
+        <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <div class="project flex flex-col justify-between">
+            <div>
+              <div class="project-icon"><i class="fa-solid fa-robot"></i></div>
+              <h3>Mteja AI</h3>
+              <p>AI-powered CRM platform linking automated customer interactions directly to internal business workflows.</p>
+            </div>
+            <div class="mt-6 flex gap-3 text-xs font-semibold">
+              <a href="#" target="_blank" class="px-3 py-2 rounded-lg bg-white/10 hover:bg-cyan-500/20 hover:text-cyan-300 transition flex items-center gap-2"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              <a href="https://github.com/willy7890" target="_blank" class="px-3 py-2 rounded-lg border border-white/10 hover:bg-white/10 transition flex items-center gap-2"><i class="devicon-github-original"></i> GitHub</a>
+            </div>
+          </div>
+
+          <div class="project flex flex-col justify-between">
+            <div>
+              <div class="project-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+              <h3>PataFundi</h3>
+              <p>A location-based directory engine connecting everyday users with verified skilled technicians across Tanzania.</p>
+            </div>
+            <div class="mt-6 flex gap-3 text-xs font-semibold">
+              <a href="#" target="_blank" class="px-3 py-2 rounded-lg bg-white/10 hover:bg-cyan-500/20 hover:text-cyan-300 transition flex items-center gap-2"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              <a href="https://github.com/willy7890" target="_blank" class="px-3 py-2 rounded-lg border border-white/10 hover:bg-white/10 transition flex items-center gap-2"><i class="devicon-github-original"></i> GitHub</a>
+            </div>
+          </div>
+
+          <div class="project flex flex-col justify-between">
+            <div>
+              <div class="project-icon"><i class="fa-solid fa-heart"></i></div>
+              <h3>Dream Together</h3>
+              <p>Shared goal management platform for couples with real-time tracking, target reminders, and automated scheduling.</p>
+            </div>
+            <div class="mt-6 flex gap-3 text-xs font-semibold">
+              <a href="#" target="_blank" class="px-3 py-2 rounded-lg bg-white/10 hover:bg-cyan-500/20 hover:text-cyan-300 transition flex items-center gap-2"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              <a href="https://github.com/willy7890" target="_blank" class="px-3 py-2 rounded-lg border border-white/10 hover:bg-white/10 transition flex items-center gap-2"><i class="devicon-github-original"></i> GitHub</a>
+            </div>
+          </div>
+
+          <div class="project flex flex-col justify-between">
+            <div>
+              <div class="project-icon"><i class="fa-solid fa-chart-line"></i></div>
+              <h3>Enterprise MIS</h3>
+              <p>Management Information System for institutional workflows, employee tracking, attendance logs, and automated reporting.</p>
+            </div>
+            <div class="mt-6 flex gap-3 text-xs font-semibold">
+              <a href="#" target="_blank" class="px-3 py-2 rounded-lg bg-white/10 hover:bg-cyan-500/20 hover:text-cyan-300 transition flex items-center gap-2"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              <a href="https://github.com/willy7890" target="_blank" class="px-3 py-2 rounded-lg border border-white/10 hover:bg-white/10 transition flex items-center gap-2"><i class="devicon-github-original"></i> GitHub</a>
+            </div>
+          </div>
+
+          <div class="project flex flex-col justify-between">
+            <div>
+              <div class="project-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <h3>Adaptive Learning OS</h3>
+              <p>AI-guided learning portal that adjusts coursework complexity dynamically based on user engagement and assessment scores.</p>
+            </div>
+            <div class="mt-6 flex gap-3 text-xs font-semibold">
+              <a href="#" target="_blank" class="px-3 py-2 rounded-lg bg-white/10 hover:bg-cyan-500/20 hover:text-cyan-300 transition flex items-center gap-2"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              <a href="https://github.com/willy7890" target="_blank" class="px-3 py-2 rounded-lg border border-white/10 hover:bg-white/10 transition flex items-center gap-2"><i class="devicon-github-original"></i> GitHub</a>
+            </div>
+          </div>
+
+          <div class="project flex flex-col justify-between">
+            <div>
+              <div class="project-icon"><i class="fa-solid fa-school"></i></div>
+              <h3>SchoolOS Ecosystem</h3>
+              <p>All-in-one educational platform for administrative oversight, online learning, grading, and parent communication.</p>
+            </div>
+            <div class="mt-6 flex gap-3 text-xs font-semibold">
+              <a href="#" target="_blank" class="px-3 py-2 rounded-lg bg-white/10 hover:bg-cyan-500/20 hover:text-cyan-300 transition flex items-center gap-2"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              <a href="https://github.com/willy7890" target="_blank" class="px-3 py-2 rounded-lg border border-white/10 hover:bg-white/10 transition flex items-center gap-2"><i class="devicon-github-original"></i> GitHub</a>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <section id="contact" class="py-24">
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20">
       <div class="max-w-5xl mx-auto px-5 text-center reveal">
-        <p class="text-cyan-400 font-semibold">05 — CONTACT</p>
-        <h2 class="text-4xl md:text-6xl font-bold mt-3">Have a project? <span class="gradient-text">Let's build it.</span></h2>
-        <p class="text-slate-400 mt-5">Find me directly through any of these platforms.</p>
-        <div class="mt-10 flex flex-wrap justify-center gap-3">
-          <a class="contact" href="mailto:wilbardmagaso777@gmail.com">✉ Email</a>
-          <a class="contact" href="https://github.com/willy7890" target="_blank">GitHub</a>
-          <a class="contact" href="https://www.linkedin.com/in/wilbard-magaso-a57213429?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">LinkedIn</a>
-          <a class="contact" href="https://www.upwork.com/freelancers/~01c5f1a496079b7530?mp_source=share" target="_blank">Upwork</a>
+        <p class="text-cyan-400 font-semibold tracking-wider">05 — CONNECT</p>
+        <h2 class="text-4xl md:text-6xl font-bold mt-2">Let's Build Something <span class="gradient-text">Great</span></h2>
+        <p class="text-slate-400 mt-4 max-w-lg mx-auto">Available for contract, freelance development, and core backend/AI roles.</p>
+        <div class="mt-10 flex flex-wrap justify-center gap-4">
+          <a class="contact" href="mailto:wilbardmagaso777@gmail.com"><i class="fa-solid fa-envelope mr-2"></i> Email Me</a>
+          <a class="contact" href="https://github.com/willy7890" target="_blank"><i class="devicon-github-original mr-2"></i> GitHub</a>
+          <a class="contact" href="https://www.linkedin.com/in/wilbard-magaso-a57213429" target="_blank"><i class="devicon-linkedin-plain mr-2"></i> LinkedIn</a>
+          <a class="contact" href="https://www.upwork.com/freelancers/~01c5f1a496079b7530" target="_blank"><i class="fa-brands fa-upwork mr-2"></i> Upwork</a>
         </div>
       </div>
     </section>
   </main>
 
-  <button id="agentBtn" class="fixed bottom-5 right-5 z-50 w-14 h-14 rounded-full bg-gradient-to-br from-violet-500 to-cyan-400 text-white font-bold shadow-2xl">AI</button>
+  <!-- AI AGENT FLOATING BUTTON -->
+  <button id="agentBtn" class="fixed bottom-6 right-6 z-50 w-16 h-16 rounded-2xl bg-gradient-to-br from-violet-600 via-indigo-600 to-cyan-500 text-white shadow-2xl flex items-center justify-center text-3xl hover:scale-110 transition border border-white/20 glow" title="Ask Wilbard AI Assistant">
+    <i class="fa-solid fa-robot agent-pulse"></i>
+  </button>
 
-  <div id="chat" class="hidden fixed bottom-24 right-5 z-50 w-[min(370px,calc(100vw-40px))] rounded-3xl border border-white/10 bg-slate-950/95 glass shadow-2xl overflow-hidden">
-    <div class="p-4 border-b border-white/10 flex justify-between"><div><b>Wilbard AI Guide</b><p class="text-xs text-slate-400">Ask about Wilbard</p></div><button id="closeChat">×</button></div>
-    <div id="messages" class="chat-scroll h-80 overflow-y-auto p-4 space-y-3"><div class="bg-white/5 rounded-2xl p-3 text-sm">Hi 👋 I can help you understand who Wilbard is, what he builds, his skills and how to contact him.</div></div>
-    <div class="p-3 border-t border-white/10 flex gap-2"><input id="chatInput" class="flex-1 bg-white/5 rounded-xl px-3 py-2 outline-none" placeholder="e.g. Who is Wilbard?"><button id="send" class="px-4 rounded-xl bg-violet-500">→</button></div>
+  <!-- AI CHAT WINDOW -->
+  <div id="chat" class="hidden fixed bottom-28 right-6 z-50 w-[min(380px,calc(100vw-40px))] rounded-3xl border border-white/10 bg-slate-950/95 glass shadow-2xl overflow-hidden">
+    <div class="p-4 border-b border-white/10 flex justify-between items-center bg-white/[.02]">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-xl overflow-hidden border border-white/20">
+          <img src="file:///home/filo/Downloads/Untitled.jpeg" alt="Wilbard AI" class="w-full h-full object-cover">
+        </div>
+        <div>
+          <b class="text-sm block leading-tight">Wilbard AI Assistant</b>
+          <p class="text-[11px] text-cyan-400">Online • AI Knowledge Engine</p>
+        </div>
+      </div>
+      <button id="closeChat" class="text-slate-400 hover:text-white text-xl px-2">×</button>
+    </div>
+    <div id="messages" class="chat-scroll h-80 overflow-y-auto p-4 space-y-3">
+      <div class="bg-white/5 rounded-2xl p-3 text-xs leading-relaxed border border-white/5">Hello! I'm Wilbard's AI representative. Ask me about his full-stack expertise, FastAPI integrations, projects, database stack, or hiring options! 🚀</div>
+    </div>
+    <div class="p-3 border-t border-white/10 flex gap-2 bg-slate-900/50">
+      <input id="chatInput" class="flex-1 bg-white/5 rounded-xl px-3 py-2 text-xs outline-none border border-white/5 focus:border-violet-500" placeholder="Ask e.g. What is his backend stack?">
+      <button id="send" class="px-4 rounded-xl bg-violet-600 hover:bg-violet-500 text-xs font-bold transition">→</button>
+    </div>
   </div>
 
   <style>
     .skill,.project,.contact { border:1px solid rgba(255,255,255,.1); background:rgba(255,255,255,.03); border-radius:1rem; transition:.25s; }
-    .skill { min-height:115px; display:grid; place-items:center; align-content:center; gap:10px; padding:15px; }
-    .skill i { font-size:2.2rem; }
-    .skill span { color:#cbd5e1; font-size:.9rem; }
+    .skill { min-height:110px; display:grid; place-items:center; align-content:center; gap:8px; padding:15px; }
+    .skill i { font-size:2rem; }
+    .skill span { color:#cbd5e1; font-size:.85rem; font-weight:500; }
     .skill:hover,.project:hover,.contact:hover { transform:translateY(-4px); border-color:rgba(139,92,246,.5); }
-    .project { padding:24px; min-height:210px; }
-    .project-icon { width:48px;height:48px;border-radius:15px;background:linear-gradient(135deg,#8b5cf6,#06b6d4);display:grid;place-items:center;font-weight:800;margin-bottom:18px; }
-    .project h3 { font-size:1.25rem;font-weight:700; }
-    .project p { color:#94a3b8;margin-top:9px;line-height:1.6;font-size:.92rem; }
-    .contact { display:inline-flex;padding:12px 18px;color:#e2e8f0; }
+    .project { padding:22px; min-height:220px; }
+    .project-icon { width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,#8b5cf6,#06b6d4);display:grid;place-items:center;font-size:1.2rem;margin-bottom:14px; }
+    .project h3 { font-size:1.15rem;font-weight:700; }
+    .project p { color:#94a3b8;margin-top:8px;line-height:1.5;font-size:.88rem; }
+    .contact { display:inline-flex; align-items:center; padding:12px 20px; color:#e2e8f0; font-size:.9rem; font-weight:600; }
   </style>
 
   <script>
-    const typedText = "Full-Stack Web Developer & AI Enthusiast";
+    const typedText = "Full-Stack Web Developer & AI Architect";
     let i=0;
     function type(){ if(i<=typedText.length){document.getElementById("typed").textContent=typedText.slice(0,i++);setTimeout(type,55);} }
     type();
@@ -197,21 +301,41 @@
     document.getElementById("agentBtn").onclick=()=>chat.classList.toggle("hidden");
     document.getElementById("closeChat").onclick=()=>chat.classList.add("hidden");
 
-    const answers=[
-      [/who|about|nani/i,"Wilbard Magaso is a Full-Stack Web Developer and AI Enthusiast focused on building practical web applications, backend systems and AI-powered digital solutions."],
-      [/skill|know|technology|tech/i,"Wilbard works with Python, FastAPI, React, JavaScript, HTML, CSS and Tailwind CSS. He also uses VS Code and Figma."],
-      [/project|build|built/i,"His featured projects include Mteja AI, PataFundi, Dream Together, Management Information System, Online Adaptive Learning System and SchoolOS."],
-      [/contact|hire|work|reach|email/i,"You can contact Wilbard at wilbardmagaso777@gmail.com, or find him on GitHub (willy7890), LinkedIn and Upwork."],
-      [/github/i,"Wilbard's GitHub username is willy7890."],
-      [/linkedin/i,"Wilbard's LinkedIn profile is available from the Contact section of this portfolio."],
-      [/upwork/i,"Wilbard is available on Upwork through the profile linked in the Contact section."]
+    const answers = [
+      [/who|about|nani/i, "Wilbard Magaso is a Full-Stack Web Developer & AI Engineer specializing in enterprise backends, FastAPI microservices, React frontends, and AI integrations."],
+      [/skill|know|technology|tech|stack/i, "His stack covers Python, FastAPI, React, Next.js, JavaScript, Node.js, PostgreSQL, MongoDB, Tailwind CSS, Git, and RESTful API engineering."],
+      [/project|built|work/i, "Featured projects include Mteja AI (AI CRM Platform), PataFundi (Technician Directory Engine), Dream Together (Couples Portal), SchoolOS, and Enterprise MIS."],
+      [/contact|hire|email|reach|phone/i, "You can contact Wilbard directly at wilbardmagaso777@gmail.com or via LinkedIn, GitHub, and Upwork."],
+      [/github/i, "Wilbard's GitHub handle is @willy7890 where he maintains active codebases and open-source contributions."],
+      [/linkedin/i, "Find his LinkedIn profile in the Contact section for direct professional connection."],
+      [/upwork|freelance/i, "Yes, Wilbard is available on Upwork for contract development, consulting, and full-stack implementation."],
+      [/backend|api/i, "His primary backend stack comprises Python (FastAPI), Node.js, Express, SQLAlchemy ORM, and highly optimized REST APIs."],
+      [/frontend|gui|ui/i, "For user interfaces, he builds reactive, accessible components using React, Next.js, and Tailwind CSS."],
+      [/database|db|data/i, "He designs production relational and document databases with PostgreSQL and MongoDB."],
+      [/ai|agent|llm|automation/i, "Wilbard integrates AI LLM agents and workflow automation directly into backend ecosystems like Mteja AI."],
+      [/patafundi/i, "PataFundi is a directory service connecting technicians with customers in Tanzania."],
+      [/mteja/i, "Mteja AI is an automated CRM tool that bridges customer conversations directly into business management systems."],
+      [/dream together/i, "Dream Together is a goal management platform designed for couples with real-time tracking."],
+      [/mis|management information/i, "The Enterprise MIS project handles staff databases, attendance, and administrative operational reports."],
+      [/location|where|country/i, "Wilbard works globally on remote software contracts and architecture consultation."],
+      [/price|rate|cost/i, "Pricing depends on project scope and technical complexity. Reach out to wilbardmagaso777@gmail.com for a quote."],
+      [/tools|ide|editor/i, "His toolkit includes VS Code, Cursor AI, Git, Linux environments, Postman, and Figma."],
+      [/motto|philosophy/i, "Wilbard focuses on clean code, system performance, and building production-ready digital solutions."]
     ];
-    function respond(q){const hit=answers.find(x=>x[0].test(q));return hit?hit[1]:"I can explain Wilbard's background, skills, projects or how to contact him. Try asking: “Who is Wilbard?”, “What skills does he have?” or “How can I hire him?”";}
+
+    function respond(q){
+      const hit = answers.find(x => x[0].test(q));
+      return hit ? hit[1] : "I can answer queries about Wilbard's full-stack stack, backend architecture, AI projects (Mteja AI, PataFundi), or contract availability!";
+    }
+
     function send(){
       const input=document.getElementById("chatInput"), q=input.value.trim(); if(!q)return;
       const box=document.getElementById("messages");
-      box.innerHTML+=`<div class="text-right"><span class="inline-block bg-violet-500/20 rounded-2xl p-3 text-sm">${q.replace(/[<>]/g,"")}</span></div>`;
-      setTimeout(()=>{box.innerHTML+=`<div class="bg-white/5 rounded-2xl p-3 text-sm">${respond(q)}</div>`;box.scrollTop=box.scrollHeight;},250);
+      box.innerHTML+=`<div class="text-right"><span class="inline-block bg-violet-600 rounded-2xl px-3 py-2 text-xs">${q.replace(/[<>]/g,"")}</span></div>`;
+      setTimeout(()=>{
+        box.innerHTML+=`<div class="bg-white/5 rounded-2xl p-3 text-xs leading-relaxed border border-white/5">${respond(q)}</div>`;
+        box.scrollTop=box.scrollHeight;
+      },200);
       input.value="";
     }
     document.getElementById("send").onclick=send;
